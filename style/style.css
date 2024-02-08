@@ -1,0 +1,56 @@
+.h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.game-container .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.game-container .row .cell {
+  width: 100px;
+  height: 100px;
+  padding: 1em;
+  border: solid 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+:root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Fjalla One", sans-serif;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+}
+
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

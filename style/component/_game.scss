@@ -1,0 +1,16 @@
+.game-container {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: fit-content;
+        .cell {
+            width: 100px;
+            height: 100px;
+            padding: 1em;
+            border: solid 1px white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

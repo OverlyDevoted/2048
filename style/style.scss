@@ -1,0 +1,26 @@
+@use "./element/element";
+@use "./element/breakpoint";
+@use "./component/game";
+@use "./layout/main";
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+:root {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%
+}
+
+header, main, footer {
+    @include breakpoint.max;
+    margin: 0 auto;
+    text-align: center;
+}
